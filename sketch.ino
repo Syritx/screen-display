@@ -8,6 +8,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 
 // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+// SCL and SDA pins should be: D1 and D2 (NodeMCU)
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 const int BUTTONPIN = 13;
